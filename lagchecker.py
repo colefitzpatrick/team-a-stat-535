@@ -38,7 +38,7 @@ c.execute("SELECT a.location, a.date, a.new_deaths_smoothed, (select new_cases_s
 
 #here's the part that isn't working
 #d = ('substr(a.date_10, 1,10)',)
-c.execute("SELECT a.location, a.date, a.new_deaths_smoothed, (select new_cases_smoothed from alldata where location = a.location and date = ?) as new_cases_smoothed from alldata a where iso_code in ('CAN','CHN','BRA','GBR','DEU','FRA','IND','ITA','JPN','USA') and date between '2020-08-01' and '2020-10-31'")
+#c.execute("SELECT a.location, a.date, a.new_deaths_smoothed, (select new_cases_smoothed from alldata where location = a.location and date = ?) as new_cases_smoothed from alldata a where iso_code in ('CAN','CHN','BRA','GBR','DEU','FRA','IND','ITA','JPN','USA') and date between '2020-08-01' and '2020-10-31'")
 
 new_cases = []
 new_deaths = []
